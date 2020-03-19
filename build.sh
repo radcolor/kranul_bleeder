@@ -9,6 +9,15 @@ KERNEL_DIR=$wd/kernel
 DATE=$(date +"%m-%d-%y")
 BUILD_START=$(date +"%s")
 
+# use ccache
+export USE_CCACHE=1
+
+#ccache variables
+export CCACHE_DIR="/home/theradcolor/.ccache"
+export CC="ccache gcc"
+export CXX="ccache g++"
+export PATH="/usr/lib/ccache:$PATH"
+
 export CROSS_COMPILE=/aarch64-linux-android-4.9/bin/aarch64-linux-android-
 export CROSS_COMPILE_ARM32=/arm-linux-androideabi-4.9/bin/arm-linux-androideabi-
 

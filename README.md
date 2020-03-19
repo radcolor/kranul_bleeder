@@ -72,6 +72,8 @@ bash build.sh
 
 - You may need to change architecture which depends on your CPU, change here in [this](https://github.com/theradcolor/karamel-bleeder/blob/master/build.sh#L16) line.
 
+- You can also off/on ccache in this [line](https://github.com/theradcolor/karamel-bleeder/blob/master/build.sh#L13) and also change directory in this [line](https://github.com/theradcolor/karamel-bleeder/blob/master/build.sh#L16), [Ccache](https://ccache.dev/) (or “ccache”) is a compiler cache. It speeds up recompilation by caching previous compilations and detecting when the same compilation is being done again. 
+
 Congratulations, you have successfully compiled and flashed a kernel *AS A NOOB!*
 
 ## Next step? (Needs more brain)
